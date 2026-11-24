@@ -1,157 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TERE WEB</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tere — Carpool & Ride Sharing App | Save Money, Make Friends</title>
+  <meta name="description" content="Tere connects people going the same way. Share rides, split fuel costs and reduce traffic. Download the free app today.">
+  <meta name="theme-color" content="#5cb466">
+  <meta property="og:title" content="Tere — Carpool & Ride Sharing App | Save Money, Make Friends">
+  <meta property="og:description" content="Tere connects people going the same way. Share rides, split fuel costs and reduce traffic. Download the free app today.">
+  <meta property="og:image" content="about/map.png">
+  <link rel="icon" type="image/png" href="about/circle.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <div class="navbar">
-        <div class="navbar1">
-            <img src="./about/logo.png" alt="logo">
+<body data-page="home">
+  <div class="preloader"><div><img src="about/logo.png" alt="Tere"><div class="road"></div></div></div>
+  <div id="header"></div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div>
+          <span class="eyebrow reveal">Pakistan's friendliest carpool app</span>
+          <h1 class="reveal d1">Download the app, <br><span class="rotator" data-words="save money,make friends,ride together,go green">save money</span><span class="caret"></span></h1>
+          <p class="lead reveal d2">It's simple and it's free. Share your daily ride with people going your way, split the cost, and help Mother Nature keep her beauty. So what are you waiting for? Let's ride together.</p>
+          <div class="store-btns reveal d3" id="download">
+            <a class="store-btn" href="#getlink"><i class="fa-brands fa-google-play"></i><span><small>GET IT ON</small><b>Google Play</b></span></a>
+            <a class="store-btn" href="#getlink"><i class="fa-brands fa-apple"></i><span><small>Download on the</small><b>App Store</b></span></a>
+          </div>
+          <div class="hero-trust reveal d4">
+            <div class="avatars"><span style="background:#5cb466">AK</span><span style="background:#f7a928">SM</span><span style="background:#3b82f6">BA</span><span style="background:#e85d75">ZH</span></div>
+            <div><div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <b style="color:var(--ink)">4.9</b></div><small>Loved by 250,000+ riders</small></div>
+          </div>
         </div>
-        <span id="menu-btn" class="menu-btn">☰</span>
-        <div class="navbar2">
-            <a href="#home">Home</a>
-            <a href="#how tere works">How tere works</a>
-            <a href="#tere benifits">Tere benifits</a>
-            <button class="btn">Help Canter</button>
+        <div class="hero-visual reveal zoom d2">
+          <div class="blob"></div>
+          <img src="about/map.png" alt="Friends sharing a ride across the map">
+          <div class="float-card fc-1"><i class="fa-solid fa-route" style="background:var(--green-soft);color:var(--green-dark)"></i><div><b>Ride matched!</b><small>Clifton → I.I. Chundrigar</small></div></div>
+          <div class="float-card fc-2"><i class="fa-solid fa-wallet" style="background:var(--yellow-soft);color:#b8860b"></i><div><b>Rs. 4,200 saved</b><small>this month</small></div></div>
+          <div class="float-card fc-3"><i class="fa-solid fa-leaf" style="background:#e3f2ff;color:#2f7fd1"></i><div><b>38 kg CO₂</b><small>reduced</small></div></div>
         </div>
+      </div>
+    </section>
+
+    <!-- Get link -->
+    <section class="getlink" id="getlink">
+      <div class="container">
+        <div class="box reveal">
+          <div><h3>Let's go. Get a link to download the app.</h3><p>We'll text you a one-tap download link. No spam, ever.</p></div>
+          <form data-getlink>
+            <span class="prefix"><img src="https://flagcdn.com/w20/pk.png" alt="" width="20" height="14" onerror="this.remove()"> +92</span>
+            <input type="tel" inputmode="numeric" placeholder="Enter your mobile number" aria-label="Mobile number" required>
+            <button class="btn btn-primary" type="submit">Send link <i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners marquee -->
+    <div class="container">
+      <div class="marquee" aria-hidden="true"><div class="marquee-track">
+        <span><i class="fa-solid fa-building"></i> Systems Ltd</span><span><i class="fa-solid fa-graduation-cap"></i> NED University</span><span><i class="fa-solid fa-briefcase"></i> TechHub</span><span><i class="fa-solid fa-city"></i> Dolmen Office</span><span><i class="fa-solid fa-building-columns"></i> FinBank</span><span><i class="fa-solid fa-hospital"></i> CityCare</span><span><i class="fa-solid fa-plane"></i> SkyPort</span>
+        <span><i class="fa-solid fa-building"></i> Systems Ltd</span><span><i class="fa-solid fa-graduation-cap"></i> NED University</span><span><i class="fa-solid fa-briefcase"></i> TechHub</span><span><i class="fa-solid fa-city"></i> Dolmen Office</span><span><i class="fa-solid fa-building-columns"></i> FinBank</span><span><i class="fa-solid fa-hospital"></i> CityCare</span><span><i class="fa-solid fa-plane"></i> SkyPort</span>
+      </div></div>
     </div>
 
-    <section id="home">
-        <div class="parent">
-                <div class="leftcontainer">
-                      <h1>DOWNLOAD APP,<br/>
-                          SAVE MONEY, MAKE<br/>
-                          FRIENDS!
-                      </h1>
-                     <p>Its simple and its free. Play your part in reducing<br/>
-                        Carbon Footprint and help Mother Nature to<br/>
-                        sustain its beauty. So what are you waiting for ?<br/>  
-                        Lets ride together</p>
-                       <img class="nasted" src="./about/button.png" alt="button">
-                       <img class="nasted" src="./about/button2.png" alt="button">
-                </div>
-                <div class="rightcantainer">
-                    <img class="nasted2" src="./about/map.png" alt="map">
-                </div>
+    <!-- Stats -->
+    <section class="section" style="padding-top:60px">
+      <div class="container">
+        <div class="stats">
+          <div class="stat reveal"><b><span data-count="250">0</span><em>K+</em></b><span>Happy riders</span></div>
+          <div class="stat reveal d1"><b><span data-count="18">0</span><em>K+</em></b><span>Verified drivers</span></div>
+          <div class="stat reveal d2"><b><span data-count="1.2">0</span><em>M</em></b><span>Rides shared</span></div>
+          <div class="stat reveal d3"><b><span data-count="12">0</span><em>+</em></b><span>Cities covered</span></div>
         </div>
+      </div>
     </section>
 
-    <div class="searchbar">
-        <div>
-             <p class="nasted3">Let’s go. Get a link<br/>
-              to download the app.</p>
+    <!-- How Tere works -->
+    <section class="section alt" id="how">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow reveal">Simple as 1-2-3</span>
+          <h2 class="title reveal d1">How <span>Tere</span> works</h2>
+          <p class="lead reveal d2">Download and install the Tere app, enter your phone number and create your account. Once approved, you can start riding or driving.</p>
         </div>
-        <div>
-            <input type="text" placeholder="Enter Your Moblie Phone Number">
-            <button>APPLY TO DRIVE</button>
+        <div class="steps">
+          <div class="step reveal"><span class="num">01</span><div class="icon-box"><i class="fa-solid fa-mobile-screen-button"></i></div><h3>Download the app</h3><p>Get Tere free from Google Play or the App Store and sign up with your phone number in under a minute.</p></div>
+          <div class="step reveal d1"><span class="num">02</span><div class="icon-box"><i class="fa-solid fa-id-card"></i></div><h3>Get verified</h3><p>Every rider and driver is verified with CNIC and phone, so you always travel with trusted people.</p></div>
+          <div class="step reveal d2"><span class="num">03</span><div class="icon-box"><i class="fa-solid fa-car-side"></i></div><h3>Ride & save</h3><p>Find a ride going your way or post your own. Split the fuel cost and enjoy the company.</p></div>
         </div>
-    </div> 
-    
-    <section id="how tere works">
-            <div class="main">
-                <span class="nasted6">HOW</span>
-                <span class="nasted4">TERE</span>
-                <span class="nasted6">WORKS</span>
-                <p class="nasted5">Download and install the tere app.
-                    Enter your phone number<br/>
-                    and make your user account. when approved you<br/>
-                    may start driving.</p>
-            </div>
-    </section> 
 
-    <section class="about">        
-            <div class="parent">
-                <div class="child1">
-                    <img src="./about/circle.png" alt="">
-                    <p class="bold"> REQUEST A RIDE</p>
-                    <p >Have to reach office or<br/>
-                        going for shopping ? Just<br/>
-                        put your current location<br/>
-                        and destination and search<br/>
-                        a ride that suits you</p>
-                    <br/>
-                    <br/> 
-                    <img src="./about/circle.png" alt="">  
-                    <p class="bold">INSDANT NOTIFICATIONS</p>
-                    <p >Get instant notifications for<br/>
-                       your rides and be in contact<br/>
-                       with fellow riders all the time</p>
-                </div>
-                <div class="child2">
-                        <img src="./about/phone.png" alt="">
-                </div>
-                <div class="child3">
-                    <img src="./about/circle.png" alt="">
-                    <p class="bold">POST A RIDE</p>
-                    <p>Going somewhere but hate to<br/>
-                       travel alone - <br/>
-                       just post your ride details and<br/>
-                       publish it</p>
-                       <br/>
-                       <br/>
-                    <img src="./about/circle.png" alt="">
-                    <p class="bold">CASHLESS PAYMENT</p> 
-                    <p>Payment made easy by using<br/>
-                       your own Wallet - no more<br/>
-                       cash to carry</p>  
-                </div>
-            </div>      
+        <div class="features-phone">
+          <div class="col">
+            <div class="feat reveal left"><div class="icon-box"><i class="fa-solid fa-magnifying-glass-location"></i></div><div><h4>Request a ride</h4><p>Heading to the office or going shopping? Enter your location and destination and pick a ride that suits you.</p></div></div>
+            <div class="feat reveal left d2"><div class="icon-box"><i class="fa-regular fa-bell"></i></div><div><h4>Instant notifications</h4><p>Get instant updates for your rides and stay in touch with fellow riders all the time.</p></div></div>
+          </div>
+          <div class="phone-wrap reveal zoom"><img src="about/phone.png" alt="Tere app home screen"></div>
+          <div class="col">
+            <div class="feat reveal right"><div class="icon-box"><i class="fa-solid fa-signs-post"></i></div><div><h4>Post a ride</h4><p>Going somewhere but hate travelling alone? Just post your ride details and publish it.</p></div></div>
+            <div class="feat reveal right d2"><div class="icon-box"><i class="fa-solid fa-credit-card"></i></div><div><h4>Cashless payment</h4><p>Pay easily with your Tere Wallet, JazzCash or card — no more cash to carry.</p></div></div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="tere benifits">
-        <div class="main">
-            <span class="nasted4">TERE</span>
-            <span class="nasted6">benifits</span>
+    <!-- Benefits -->
+    <section class="section" id="benefits">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow reveal">Why drive with us</span>
+          <h2 class="title reveal d1"><span>Tere</span> benefits</h2>
+          <p class="lead reveal d2">Join thousands of drivers who earn on their own terms while making city travel greener.</p>
         </div>
-        <div class="major">
-            <div>
-                <img src="./about/number.png" alt="">
-                <span class="nasted7">working hours</span>
-                <p>You can decide when, and how much<br/>
-                   time you want to drive.</p>
-            </div>
-            <div>
-                <img class="img" src="./about/Frame.png" alt="">
-            </div>
+
+        <div class="benefit">
+          <div class="b-text reveal left">
+            <span class="bnum">01.</span>
+            <h3>Flexible working hours</h3>
+            <p>You decide when, and how much time, you want to drive. Morning commute, evenings or weekends — it's your call.</p>
+            <ul class="checks"><li><i class="fa-solid fa-check"></i> No minimum hours or targets</li><li><i class="fa-solid fa-check"></i> Go online or offline with one tap</li><li><i class="fa-solid fa-check"></i> Match rides with your own route</li></ul>
+          </div>
+          <div class="b-img reveal right"><span class="tagpill">⏰ Your time, your rules</span><img src="about/Frame.png" alt="Flexible working hours"></div>
         </div>
-        <div class="major2">
-            <div>
-                <img class="img" src="./about/frame2.png" alt="">
-            </div>
-            <div>
-                <img src="./about/number2.png" alt="">
-                <span class="nasted7">Earnings</span>
-                <p>By diving with tere you can</p>
-            </div>
+
+        <div class="benefit rev">
+          <div class="b-text reveal right">
+            <span class="bnum">02.</span>
+            <h3>Earnings that add up</h3>
+            <p>By driving with Tere you can cover your fuel costs and earn extra every month — paid weekly, straight to your wallet or bank account.</p>
+            <ul class="checks"><li><i class="fa-solid fa-check"></i> Keep up to 90% of every fare</li><li><i class="fa-solid fa-check"></i> Weekly payouts, zero hidden fees</li><li><i class="fa-solid fa-check"></i> Bonuses during peak hours</li></ul>
+            <a href="drive.html#calculator" class="btn btn-primary" style="margin-top:10px">Calculate your earnings <i class="fa-solid fa-calculator"></i></a>
+          </div>
+          <div class="b-img reveal left" style="background:linear-gradient(135deg,var(--yellow-soft),#fff)"><span class="tagpill">💰 Avg. Rs. 45,000 / month</span><img src="about/frame2.png" alt="Earnings"></div>
         </div>
-        <div class="major3">
-            <div>
-                <img src="./about/number3.png" alt="">
-                <span class="nasted7">Customer support 24/7</span>
-                <p>Tere is a local service provider and we are proud to<br/>
-                support you in your local language. We are proud<br/> 
-                to be at your service 24/7!</p>
-            </div>
-            <div>
-                <img class="img" src="./about/frame3.png" alt="">
-            </div>    
+
+        <div class="benefit">
+          <div class="b-text reveal left">
+            <span class="bnum">03.</span>
+            <h3>Customer support 24/7</h3>
+            <p>Tere is a local service provider and we're proud to support you in your own language — Urdu, English, Sindhi or Punjabi. We're at your service 24/7!</p>
+            <ul class="checks"><li><i class="fa-solid fa-check"></i> In-app chat and phone support</li><li><i class="fa-solid fa-check"></i> SOS button and live trip sharing</li><li><i class="fa-solid fa-check"></i> Insurance on every ride</li></ul>
+          </div>
+          <div class="b-img reveal right" style="background:linear-gradient(135deg,#e3f2ff,#fff)"><span class="tagpill">🎧 Avg. reply under 2 min</span><img src="about/frame3.png" alt="24/7 customer support"></div>
         </div>
+      </div>
     </section>
-    <div class="footer">
-        <div>
-            <img class="content" src="./about/logo2.png" alt="">
+
+    <!-- Testimonials -->
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow reveal">Testimonials</span>
+          <h2 class="title reveal d1">Riders <span>love</span> Tere</h2>
         </div>
-        <div>
-            <img class="foot1" src="./about/menu1.png" alt="">
+        <div class="testi-wrap reveal">
+          <div class="testi-track">
+            <div class="testi"><div class="inner"><div class="stars">★★★★★</div><p>“I commute from Gulshan to the office every day. With Tere I'm saving almost half on fuel and I've made two great friends on the way!”</p><div class="who"><span class="av" style="background:#5cb466">AK</span><div><b>Ayesha Khan</b><small>Software engineer, Karachi</small></div></div></div></div>
+            <div class="testi"><div class="inner"><div class="stars">★★★★★</div><p>“I drive with Tere in the evenings after work. The extra income covers my car installment and the app is super easy to use.”</p><div class="who"><span class="av" style="background:#f7a928">BA</span><div><b>Bilal Ahmed</b><small>Driver partner, Lahore</small></div></div></div></div>
+            <div class="testi"><div class="inner"><div class="stars">★★★★★</div><p>“As a student, safety was my biggest concern. Verified drivers, live trip sharing and female-only rides make me feel totally safe.”</p><div class="who"><span class="av" style="background:#e85d75">SM</span><div><b>Sara Malik</b><small>Student, Islamabad</small></div></div></div></div>
+            <div class="testi"><div class="inner"><div class="stars">★★★★☆</div><p>“We moved our whole team's office commute to Tere Business. Parking problems are gone and our employees are happier.”</p><div class="who"><span class="av" style="background:#3b82f6">ZH</span><div><b>Zain Hussain</b><small>HR Manager, TechHub</small></div></div></div></div>
+            <div class="testi"><div class="inner"><div class="stars">★★★★★</div><p>“Cashless payments with JazzCash are a lifesaver. No more arguing about change. Customer support replied in a minute!”</p><div class="who"><span class="av" style="background:#8b5cf6">FN</span><div><b>Fatima Noor</b><small>Doctor, Rawalpindi</small></div></div></div></div>
+          </div>
+          <div class="testi-nav"><button class="round-btn" data-prev aria-label="Previous"><i class="fa-solid fa-arrow-left"></i></button><div class="dots"></div><button class="round-btn" data-next aria-label="Next"><i class="fa-solid fa-arrow-right"></i></button></div>
         </div>
-        <div>
-            <img class="foot2" src="./about/menu1.png" alt="">
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow reveal">FAQ</span>
+          <h2 class="title reveal d1">Questions? <span>Answers.</span></h2>
         </div>
-    </div>
+        <div class="faq reveal">
+          <div class="faq-item"><button class="faq-q">Is Tere free to use?<i class="fa-solid fa-plus"></i></button><div class="faq-a"><p>Yes! Downloading and signing up is completely free. Riders only pay their share of the trip cost, which is shown upfront before you book.</p></div></div>
+          <div class="faq-item"><button class="faq-q">How do you keep riders safe?<i class="fa-solid fa-plus"></i></button><div class="faq-a"><p>Every user is verified with CNIC and phone number. Rides include live location sharing, an in-app SOS button, ratings after every trip and optional female-only rides.</p></div></div>
+          <div class="faq-item"><button class="faq-q">How much can I earn as a driver?<i class="fa-solid fa-plus"></i></button><div class="faq-a"><p>It depends on your city and how often you drive. Most part-time drivers earn Rs. 30,000–60,000 a month. Try our <a href="drive.html#calculator" style="color:var(--green-dark);font-weight:700">earnings calculator</a>.</p></div></div>
+          <div class="faq-item"><button class="faq-q">Which payment methods are supported?<i class="fa-solid fa-plus"></i></button><div class="faq-a"><p>You can pay with your Tere Wallet, JazzCash, Easypaisa, debit/credit cards, or cash.</p></div></div>
+        </div>
+        <p class="center" style="margin-top:30px"><a href="contact.html#help" class="btn btn-ghost">Visit the Help Center <i class="fa-solid fa-arrow-right"></i></a></p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="container">
+      <div class="cta reveal zoom">
+        <div style="position:relative;z-index:1">
+          <h2>Ready to ride together?</h2>
+          <p>Join 250,000+ people saving money, making friends and reducing traffic every day.</p>
+          <div class="store-btns">
+            <a class="store-btn" href="#getlink"><i class="fa-brands fa-google-play"></i><span><small>GET IT ON</small><b>Google Play</b></span></a>
+            <a class="store-btn" href="#getlink"><i class="fa-brands fa-apple"></i><span><small>Download on the</small><b>App Store</b></span></a>
+          </div>
+        </div>
+        <div class="cta-img"><img src="about/phone.png" alt="Tere app"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+  <script src="js/main.js"></script>
 </body>
-<script src="app.js"></script>
 </html>

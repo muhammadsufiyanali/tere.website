@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Help Center — Tere</title>
+  <meta name="description" content="Get in touch with the Tere team or find answers in our help center. Support available 24/7.">
+  <meta name="theme-color" content="#5cb466">
+  <meta property="og:title" content="Contact & Help Center — Tere">
+  <meta property="og:description" content="Get in touch with the Tere team or find answers in our help center. Support available 24/7.">
+  <meta property="og:image" content="about/map.png">
+  <link rel="icon" type="image/png" href="about/circle.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+  <div class="preloader"><div><img src="about/logo.png" alt="Tere"><div class="road"></div></div></div>
+  <div id="header"></div>
+
+  <main>
+    <section class="page-hero">
+      <span class="ring" style="width:480px;height:480px;right:-180px;top:-200px"></span>
+      <div class="container">
+        <span class="eyebrow reveal">Contact & help</span>
+        <h1 class="reveal d1">We'd love to <span class="hl">hear from you</span></h1>
+        <p class="lead reveal d2">Questions, partnerships or feedback — our team replies within 24 hours, and rider support is available 24/7.</p>
+        <div class="crumbs reveal d3"><a href="index.html">Home</a> / <span>Contact</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div>
+          <div class="info-card reveal left"><div class="icon-box"><i class="fa-solid fa-location-dot"></i></div><div><small>Head office</small><b>3 Shahrah-e-Faisal, Karachi</b></div></div>
+          <div class="info-card reveal left d1"><div class="icon-box"><i class="fa-solid fa-envelope"></i></div><div><small>Email us</small><b><a href="mailto:hello@tere.app">hello@tere.app</a></b></div></div>
+          <div class="info-card reveal left d2"><div class="icon-box"><i class="fa-solid fa-phone"></i></div><div><small>Call us</small><b><a href="tel:+922111112222">+92 21 1111 2222</a></b></div></div>
+          <div class="info-card reveal left d3"><div class="icon-box"><i class="fa-regular fa-clock"></i></div><div><small>Office hours</small><b>Mon – Sat, 9am – 6pm</b></div></div>
+          <div class="map-card reveal left"><img src="about/map.png" alt="Find us" style="max-height:260px;margin:0 auto"></div>
+        </div>
+        <form class="panel reveal right" id="contact-form" novalidate>
+          <h3 style="font-size:1.5rem;margin-bottom:6px">Send us a message</h3>
+          <p style="color:var(--muted);margin-bottom:24px">Fill in the form and we'll get back to you shortly.</p>
+          <div class="form-grid">
+            <div class="field"><label for="c-name">Your name *</label><input id="c-name" name="name" required minlength="2" autocomplete="name"><span class="err">Please enter your name</span></div>
+            <div class="field"><label for="c-email">Email *</label><input id="c-email" name="email" type="email" required autocomplete="email"><span class="err">Enter a valid email</span></div>
+            <div class="field"><label for="c-phone">Phone</label><input id="c-phone" name="phone" type="tel" data-type="phone" placeholder="0300-1234567"><span class="err">Enter a valid mobile number</span></div>
+            <div class="field"><label for="topic">Topic *</label><select id="topic" name="topic" required><option value="">Choose a topic</option><option>Rider support</option><option>Driver support</option><option>Tere Business</option><option>Partnerships</option><option>Careers</option><option>Press</option><option>Other</option></select><span class="err">Please choose a topic</span></div>
+            <div class="field full"><label for="c-msg">Message *</label><textarea id="c-msg" name="message" required minlength="10" placeholder="How can we help?"></textarea><span class="err">Please write at least 10 characters</span></div>
+          </div>
+          <button type="submit" class="btn btn-primary" style="margin-top:22px">Send message <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section alt" id="help">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow reveal">Help center</span>
+          <h2 class="title reveal d1">Frequently asked <span>questions</span></h2>
+        </div>
+        <div class="faq reveal">
+          <div class="faq-item"><button class="faq-q">How do I book a ride?<i class="fa-solid fa-plus"></i></button><div class="faq-a"><p>Open the app, enter your pickup and drop-off locations, choose a ride from the list and tap “Request”. The driver confirms and you'll get a notification instantly.</p></div></div>
+          <div class="faq-item"><button class="faq-q">How do I post a ride as a driver?<i class="fa-solid fa-plus"></i></button><div class="faq-a"><p>After your driver profile is approved, tap “Publish a ride”, add your route, time and number of seats. Riders on your route will be able to request a seat.</p></div></div>
+          <div class="faq-item"><button class="faq-q">Can I cancel a ride?<i class="fa-solid fa-plus"></i></button><div class="faq-a"><p>Yes. Cancellations are free up to 30 minutes before departure. Tere Plus members get free cancellations anytime.</p></div></div>
+          <div class="faq-item"><button class="faq-q">How is the fare calculated?<i class="fa-solid fa-plus"></i></button><div class="faq-a"><p>Fares are based on distance and shared fairly between riders. You always see the exact price before you book — no surge pricing.</p></div></div>
+          <div class="faq-item"><button class="faq-q">I left something in the car. What do I do?<i class="fa-solid fa-plus"></i></button><div class="faq-a"><p>Go to “My rides”, open the trip and tap “Lost an item”. We'll connect you with the driver right away.</p></div></div>
+          <div class="faq-item"><button class="faq-q">How do I delete my account?<i class="fa-solid fa-plus"></i></button><div class="faq-a"><p>Go to Profile → Settings → Account → Delete account, or send us a message using the form above.</p></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

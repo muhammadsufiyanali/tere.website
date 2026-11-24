@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drive with Tere — Earn on Your Own Schedule</title>
+  <meta name="description" content="Become a Tere driver. Flexible hours, weekly payouts and 24/7 support. Calculate your earnings and apply in minutes.">
+  <meta name="theme-color" content="#5cb466">
+  <meta property="og:title" content="Drive with Tere — Earn on Your Own Schedule">
+  <meta property="og:description" content="Become a Tere driver. Flexible hours, weekly payouts and 24/7 support. Calculate your earnings and apply in minutes.">
+  <meta property="og:image" content="about/map.png">
+  <link rel="icon" type="image/png" href="about/circle.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="drive">
+  <div class="preloader"><div><img src="about/logo.png" alt="Tere"><div class="road"></div></div></div>
+  <div id="header"></div>
+
+  <main>
+    <section class="page-hero">
+      <span class="ring" style="width:520px;height:520px;left:-220px;bottom:-260px"></span>
+      <div class="container">
+        <span class="eyebrow reveal">Drive with Tere</span>
+        <h1 class="reveal d1">Turn your empty seats into <span class="hl">extra income</span></h1>
+        <p class="lead reveal d2">Drive when you want, earn on routes you already take and meet great people along the way.</p>
+        <div class="hero-actions reveal d3" style="justify-content:center;margin-top:28px">
+          <a href="#apply" class="btn btn-primary">Apply to drive <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#calculator" class="btn btn-ghost">Calculate earnings</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="steps">
+          <div class="step reveal"><span class="num">01</span><div class="icon-box"><i class="fa-regular fa-clock"></i></div><h3>Flexible hours</h3><p>No shifts and no bosses. Go online whenever it suits you.</p></div>
+          <div class="step reveal d1"><span class="num">02</span><div class="icon-box"><i class="fa-solid fa-money-bill-trend-up"></i></div><h3>Weekly payouts</h3><p>Earnings land in your bank or wallet every Monday — keep up to 90% of each fare.</p></div>
+          <div class="step reveal d2"><span class="num">03</span><div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div><h3>Insured & supported</h3><p>Every trip is insured and our driver support team is available 24/7.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="calculator">
+      <div class="container split">
+        <div class="reveal left">
+          <span class="eyebrow">Earnings calculator</span>
+          <h2 class="title">See how much you could <span>earn</span></h2>
+          <p class="lead" style="margin-bottom:22px">Move the sliders to estimate your earnings. Actual earnings depend on demand, distance and your city.</p>
+          <ul class="checks">
+            <li><i class="fa-solid fa-check"></i> Peak-hour bonuses on top</li>
+            <li><i class="fa-solid fa-check"></i> Referral rewards of Rs. 2,000 per driver</li>
+            <li><i class="fa-solid fa-check"></i> Fuel discounts at partner stations</li>
+          </ul>
+        </div>
+        <div class="calc reveal right">
+          <h3><i class="fa-solid fa-calculator" style="color:var(--green)"></i> Estimate your income</h3>
+          <div class="range"><div class="rl"><span>City</span></div>
+            <select id="c-city" class="field" style="width:100%;padding:12px 14px;border-radius:12px;border:none;background:#24344a;color:#fff">
+              <option value="420">Karachi</option><option value="400">Lahore</option><option value="450">Islamabad / Rawalpindi</option><option value="330">Other cities</option>
+            </select></div>
+          <div class="range"><div class="rl"><span>Hours per day</span><b id="c-hours-v"></b></div><input type="range" id="c-hours" min="1" max="12" value="4"></div>
+          <div class="range"><div class="rl"><span>Days per week</span><b id="c-days-v"></b></div><input type="range" id="c-days" min="1" max="7" value="5"></div>
+          <div class="result">
+            <div><small>Weekly</small><b id="c-week" style="font-size:1.6rem;color:#fff"></b></div>
+            <div style="text-align:right"><small>Estimated monthly</small><b id="c-month"></b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="apply">
+      <div class="container" style="max-width:820px">
+        <div class="section-head center" style="margin-bottom:36px">
+          <span class="eyebrow reveal">Apply in 3 minutes</span>
+          <h2 class="title reveal d1">Become a <span>Tere driver</span></h2>
+        </div>
+        <form class="panel reveal" id="driver-form" novalidate>
+          <div class="stepper"><span class="bar"></span>
+            <div class="st on"><span>1</span>Personal</div><div class="st"><span>2</span>Vehicle</div><div class="st"><span>3</span>Availability</div>
+          </div>
+
+          <div class="fstep active">
+            <div class="form-grid">
+              <div class="field"><label for="d-name">Full name *</label><input id="d-name" name="name" required minlength="3" autocomplete="name"><span class="err">Please enter your full name</span></div>
+              <div class="field"><label for="d-phone">Mobile number *</label><input id="d-phone" name="phone" type="tel" data-type="phone" required placeholder="0300-1234567"><span class="err">Enter a valid mobile number</span></div>
+              <div class="field"><label for="d-email">Email</label><input id="d-email" name="email" type="email" placeholder="optional"><span class="err">Enter a valid email</span></div>
+              <div class="field"><label for="d-cnic">CNIC number *</label><input id="d-cnic" name="cnic" required minlength="13" placeholder="42101-1234567-1"><span class="err">Enter your CNIC number</span></div>
+              <div class="field full"><label for="d-city">City *</label><select id="d-city" name="city" required><option value="">Select your city</option><option>Karachi</option><option>Lahore</option><option>Islamabad</option><option>Rawalpindi</option><option>Faisalabad</option><option>Multan</option><option>Peshawar</option><option>Hyderabad</option></select><span class="err">Please select a city</span></div>
+            </div>
+          </div>
+
+          <div class="fstep">
+            <div class="form-grid">
+              <div class="field"><label for="d-type">Vehicle type *</label><select id="d-type" name="vehicle" required><option value="">Select</option><option>Car (Hatchback)</option><option>Car (Sedan)</option><option>SUV</option><option>Mini van</option></select><span class="err">Select your vehicle type</span></div>
+              <div class="field"><label for="d-model">Make & model *</label><input id="d-model" name="model" required placeholder="e.g. Suzuki Cultus"><span class="err">Enter the make and model</span></div>
+              <div class="field"><label for="d-year">Model year *</label><select id="d-year" name="year" required><option value="">Select year</option></select><span class="err">Select the model year</span></div>
+              <div class="field"><label for="d-reg">Registration number *</label><input id="d-reg" name="registration" required placeholder="e.g. BKX-123"><span class="err">Enter registration number</span></div>
+              <div class="field full"><label class="chip-opt" style="display:flex;gap:10px;align-items:center;font-weight:500"><input type="checkbox" name="license" required style="display:inline-block;width:18px;height:18px;accent-color:var(--green)"> I have a valid driving license *</label><span class="err">A valid license is required</span></div>
+            </div>
+          </div>
+
+          <div class="fstep">
+            <div class="form-grid">
+              <div class="field full"><label>When do you plan to drive?</label>
+                <div class="chips">
+                  <label class="chip-opt"><input type="checkbox" name="morning" checked><span>🌅 Mornings</span></label>
+                  <label class="chip-opt"><input type="checkbox" name="evening"><span>🌆 Evenings</span></label>
+                  <label class="chip-opt"><input type="checkbox" name="weekend"><span>📅 Weekends</span></label>
+                  <label class="chip-opt"><input type="checkbox" name="intercity"><span>🛣️ Intercity</span></label>
+                </div></div>
+              <div class="field full"><label for="d-route">Your usual route</label><input id="d-route" name="route" placeholder="e.g. Gulshan-e-Iqbal → I.I. Chundrigar Road"></div>
+              <div class="field full"><label for="d-ref">How did you hear about us?</label><select id="d-ref" name="source"><option>Social media</option><option>A friend</option><option>Google search</option><option>Billboard / poster</option><option>Other</option></select></div>
+              <div class="field full"><label style="display:flex;gap:10px;align-items:center;font-weight:500"><input type="checkbox" name="terms" required style="width:18px;height:18px;accent-color:var(--green)"> I agree to Tere's driver terms & privacy policy *</label><span class="err">Please accept the terms</span></div>
+            </div>
+          </div>
+
+          <div class="form-nav">
+            <button type="button" class="btn btn-ghost" data-back><i class="fa-solid fa-arrow-left"></i> Back</button>
+            <button type="button" class="btn btn-primary" data-next-step>Continue <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
