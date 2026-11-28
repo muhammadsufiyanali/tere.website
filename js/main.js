@@ -76,6 +76,7 @@
       </div>
       <div class="footer-bottom">
         <span>© ${new Date().getFullYear()} Tere Technologies. All rights reserved.</span>
+        <span class="credit">Designed &amp; developed by <a href="https://saconsultancy.pk/futurevision/" target="_blank" rel="noopener">Future Vision Enterprises</a></span>
         <span><a href="#">Privacy policy</a> · <a href="#">Terms of service</a></span>
       </div>
     </div></footer>

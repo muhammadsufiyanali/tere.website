@@ -391,6 +391,7 @@ h1, h2, h3, h4 { color: var(--ink); line-height: 1.15; letter-spacing: -.02em; }
 .news button { width: 42px; height: 42px; border-radius: 50%; background: var(--green); color: #fff; flex-shrink: 0; }
 .footer-bottom { border-top: 1px solid rgba(255, 255, 255, .08); margin-top: 56px; padding: 24px 0; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: .87rem; }
 .footer-bottom a:hover { color: #fff; }
+.footer-bottom .credit a { color: #fff; font-weight: 600; }
 
 /* ---------- Misc ---------- */
 .toast-wrap { position: fixed; bottom: 24px; right: 24px; z-index: 2000; display: grid; gap: 10px; }
